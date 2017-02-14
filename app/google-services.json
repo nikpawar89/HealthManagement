@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "864693964811",
+    "firebase_url": "https://friendlychat-44cc0.firebaseio.com",
+    "project_id": "friendlychat-44cc0",
+    "storage_bucket": "friendlychat-44cc0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864693964811:android:b5d75907de594a2d",
+        "android_client_info": {
+          "package_name": "com.google.firebase.codelab.friendlychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864693964811-lpmnbo8u1u2ibilvbqbcvgk5lrbog6or.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.google.firebase.codelab.friendlychat",
+            "certificate_hash": "9D53DF7FDCED977718469C52D9529F7919A5AF91"
+          }
+        },
+        {
+          "client_id": "864693964811-9a150gqnpdit11t9l0vm1p6h4714hasa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuN7OMWgCntWPVdMjJ_EPEpPXSJbIMTPM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864693964811-9a150gqnpdit11t9l0vm1p6h4714hasa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:864693964811:android:b4ff4bbe37463a7c",
+        "android_client_info": {
+          "package_name": "com.example.nikpa.healthmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "864693964811-9q8mqeeim5lku37mdc130foii12v4nnl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.nikpa.healthmanagement",
+            "certificate_hash": "9D53DF7FDCED977718469C52D9529F7919A5AF91"
+          }
+        },
+        {
+          "client_id": "864693964811-9a150gqnpdit11t9l0vm1p6h4714hasa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuN7OMWgCntWPVdMjJ_EPEpPXSJbIMTPM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "864693964811-9a150gqnpdit11t9l0vm1p6h4714hasa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
