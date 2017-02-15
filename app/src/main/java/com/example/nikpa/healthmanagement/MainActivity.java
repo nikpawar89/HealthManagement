@@ -28,30 +28,6 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonSave;
 
 
-    // gunjans code
-  /*  EditText textBoxfirstname=(EditText)findViewById(R.id.editTextfirstname);
-    EditText textBoxlastname=(EditText)findViewById(R.id.editTextlastname);
-    EditText textBoxemergency=(EditText)findViewById(R.id.editTextemergency);
-    EditText textBoxphone=(EditText)findViewById(R.id.editTextphonenumber);
-    EditText textBoxage=(EditText)findViewById(R.id.editTextage);
-    EditText textusername=(EditText)findViewById(R.id.editTextusername) ;
-    EditText textemailid=(EditText) findViewById(R.id.editTextemailid);
-    EditText textpassword=(EditText) findViewById(R.id.editTextpassword);
-
-    String vfirstname= textBoxfirstname.getText().toString();
-    String vlastname=textBoxlastname.getText().toString();
-    String vemergency=textBoxemergency.getText().toString();
-    String vphone=textBoxphone.getText().toString();
-    int phone=Integer.parseInt(vphone);
-    String vage=textBoxphone.getText().toString();
-    int age=Integer.parseInt(vage);
-    String vusername=textusername.getText().toString().trim();
-
-    String vemailid=textemailid.getText().toString().trim();*/
-
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -112,9 +88,6 @@ public class MainActivity extends AppCompatActivity {
                 //vemailid=vemailid.trim();
                 String vextpassword=textpassword.getText().toString().trim();
 
-
-
-//&& vphone.length()==10 && vage.length()==2
                 Toast.makeText(getApplicationContext(),"Phone value is "+vphone+" phone length is "+vphone.length(),Toast.LENGTH_SHORT).show();
 
                 Toast.makeText(getApplicationContext(),"age value is"+vage+"and age length is"+vage.length(),Toast.LENGTH_SHORT).show();
@@ -172,68 +145,19 @@ public class MainActivity extends AppCompatActivity {
         //getting the database reference
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
-        //getting the views from xml resource
-       /* editTextAddress = (EditText) findViewById(R.id.editTextAddress);
-        editTextName = (EditText) findViewById(R.id.editTextName);
-        buttonSave = (Button) findViewById(R.id.buttonSave);*/
 
-      //  buttonSave.setOnClickListener(this);
     }
 
 
- /*   private void saveUserInformation() {
-        //Getting values from database
-        String name = editTextName.getText().toString().trim();
-        String add = editTextAddress.getText().toString().trim();
 
-        //creating a userinformation object
-        UserInformation userInformation = new UserInformation(name, add);
-
-        //getting the current logged in user
-        //FirebaseUser user = firebaseAuth.getCurrentUser();
-
-        //saving data to firebase database
-        *//*
-        * first we are creating a new child in firebase with the
-        * unique id of logged in user
-        * and then for that user under the unique id we are saving data
-        * for saving data we are using setvalue method this method takes a normal java object
-        * *//*
-        databaseReference.child("test").setValue(userInformation);
-
-        //displaying a success toast
-        Toast.makeText(this, " chal save kardiya teri info", Toast.LENGTH_LONG).show();
-    }*/
 
 
     private void saveUserInformation(String firstName, String lastName,String emailId,int age,double phoneNumber,String emergencyContact,
                                      String username ,String password) {
-        //Getting values from database
-      /*  String name = editTextName.getText().toString().trim();
-        String add = editTextAddress.getText().toString().trim();*/
 
-        //creating a userinformation object
-
-      /*  public String firstName;
-        public String lastName;
-        public String emailId;
-        public int age;
-        public int phoneNumber;
-        public String emergencyContact;
-        public String username;
-        public String password;*/
         UserInformation userInformation = new UserInformation(firstName,lastName,emailId,age,phoneNumber,emergencyContact,username,password);
 
-        //getting the current logged in user
-        //FirebaseUser user = firebaseAuth.getCurrentUser();
 
-        //saving data to firebase database
-        /*
-        * first we are creating a new child in firebase with the
-        * unique id of logged in user
-        * and then for that user under the unique id we are saving data
-        * for saving data we are using setvalue method this method takes a normal java object
-        * */
         databaseReference.child(emailId).setValue(userInformation);
 
         //displaying a success toast
@@ -242,12 +166,5 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-   /* @Override
-    public void onClick(View view) {
 
-        if(view == buttonSave){
-            saveUserInformation();
-        }
-
-    }*/
 }
